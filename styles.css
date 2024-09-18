@@ -1,0 +1,119 @@
+body, html , #container{ 
+    position: relative;
+    margin: 0; 
+    padding: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: bisque;
+} 
+
+#M-O {
+    position: absolute;
+    background-color: green;
+    width: 10%;
+    height: 12%;
+    left: 45%;
+}
+
+#skills {
+    position: absolute;
+    background-color: yellowgreen;
+    width: 10%;
+    height: 12%;
+    
+}
+
+
+#infos {
+    position: absolute;
+    background-color: yellowgreen;
+    top: 0;
+    width: 10%;
+    height: 100px;
+    left: 85%;
+}
+
+
+
+button {
+    width: 10%;
+    height: 50px;
+    margin-top: 20%;
+}
+
+#skillsList {
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 20%;
+    margin-bottom: 2%;
+}
+
+#infosList {
+    position: absolute;
+    width: 10%;
+    left: 85%;
+    display: none;
+}
+
+#HTML {
+    position: relative;
+    height: 20%;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+#descHTML {
+    margin-left: 3%;
+    display: none;
+    width: 100%;
+
+}
+
+#CSS {
+    position: relative;
+    height: 20%;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+#descCSS {
+    margin-left: 3%;
+    display: none;
+}
+
+#JS {
+    position: relative;
+    height: 20%;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+#descJS {
+    margin-left: 3%;
+    display: none;
+}
+
+#PHP {
+    position: relative;
+    height: 20%;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+#descPHP {
+    margin-left: 3%;
+    display: none;
+}
+
+#PYTHON {
+    position: relative;
+    height: 20%;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+#descPYTHON {
+    margin-left: 3%;
+    display: none;
+}
