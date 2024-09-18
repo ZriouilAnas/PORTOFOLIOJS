@@ -24,16 +24,16 @@ const moveR = () => {
    
     p.style.left = position + "%";
     p.style.backgroundColor = "green"
-    collision(p,skills)
+    collision()
 }
 const moveL = () => {
     position -= 5; 
     p.style.backgroundColor = "red"
     p.style.left = position + "%";
-    collision(p,skills)
+    collision()
 }
 
-const collision  = (p,skills) => {
+const collision  = () => {
     if (position < 10) {
         skills.style.backgroundColor = "pink"
         skills.innerText = "SKILLS";
@@ -41,13 +41,12 @@ const collision  = (p,skills) => {
     } 
     else if (position > 75) {
         infos.style.backgroundColor = "pink"
-        infos.innerText = "SKILLS";
+        infos.innerText = "CONTACTS";
         infosList.style.display ="block"
               
     } else 
     skills.style.backgroundColor = "yellowgreen";
     
-
 }
 
 
