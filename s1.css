@@ -296,9 +296,29 @@
         var(--window-color3) 30%
       );
   }
+
+#HTML {
+    background-color: rgba(217, 140, 198, 0.336);
+}
+#CSS {
+    background-color:   rgba(217, 140, 198, 0.336);
+}
+#JS {
+    background-color: rgba(217, 140, 198, 0.336);
+}
+#PHP {
+    background-color: rgba(217, 140, 198, 0.336);
+}
+#PYTHON {
+    background-color: rgba(217, 140, 198, 0.336);
+}
   
+h1, h2{
+  text-align: center;
+  position: relative;
+  background-color: transparent;
   
-    
+} 
     
   
       

@@ -70,14 +70,14 @@ button:hover {
 #skillsList {
     position: absolute;
     display: block;
-    width: 30%;
+    width: 35%;
     height: 20%;
     margin-bottom: 2%;
     display: none;
     font-size: 1.2rem;
     font-weight: 600;
     color: yellow;
-    background-color: black;
+    
     
 }
 
@@ -207,7 +207,7 @@ ul {
 h1, h2{
     text-align: center;
     position: relative;
-    background-color:  rgb(128, 128, 128,0.8);
+    
     
 }
 

@@ -72,7 +72,7 @@ HTML.addEventListener("click", () => {
 
     if (descHTML.style.display === "none") {
         descHTML.style.display = "block"
-        HTML.style.backgroundColor = "green"
+        
 
         descCSS.style.display = "none"
         descJS.style.display = "none"
@@ -85,7 +85,7 @@ HTML.addEventListener("click", () => {
 })
 
 CSS.addEventListener("click", () => {
-    CSS.style.backgroundColor = "green"
+   
     if (descCSS.style.display == "none") {
         descCSS.style.display = "block"
 
@@ -100,7 +100,7 @@ CSS.addEventListener("click", () => {
 })
 
 JS.addEventListener("click", () => {
-    JS.style.backgroundColor = "green"
+    
     if (descJS.style.display == "none") {
         descJS.style.display = "block"
 
@@ -115,7 +115,7 @@ JS.addEventListener("click", () => {
 })
 
 PHP.addEventListener("click", () => {
-    PHP.style.backgroundColor = "green"
+    
     if (descPHP.style.display == "none") {
         descPHP.style.display = "block"
 
@@ -130,7 +130,7 @@ PHP.addEventListener("click", () => {
 })
 
 PYTHON.addEventListener("click", () => {
-    PYTHON.style.backgroundColor = "green"
+    
     if (descPYTHON.style.display == "none") {
         descPYTHON.style.display = "block"
 
@@ -148,10 +148,12 @@ tglBG.addEventListener("click", () => {
     if (bg.style.display == 'none' ) {
         bg.style.display = 'block'
         dORn.style.display = 'inline'
+        tglFunc()
     }
     else {
         bg.style.display = 'none'
         dORn.style.display = 'none'
+        s.setAttribute("href",'s0.css')
 
 }
 
@@ -160,17 +162,18 @@ tglBG.addEventListener("click", () => {
 })
 
 let tgl = 0;
-dORn.addEventListener("click", () => {
+const tglFunc = () => {
     
-        if (tgl == 1) {
-            s.setAttribute("href",'s2.css') 
-            tgl = 0;
-        } else if (tgl == 0 ) {
-            s.setAttribute("href",'s1.css') 
-            tgl = 1;
-        }
-  
-    
+    if (tgl == 1) {
+        s.setAttribute("href",'s2.css') 
+        tgl = 0;
+    } else if (tgl == 0 ) {
+        s.setAttribute("href",'s1.css') 
+        tgl = 1;
+    }
 
-})
+
+
+}
+dORn.addEventListener("click", tglFunc)
 

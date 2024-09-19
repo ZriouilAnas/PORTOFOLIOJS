@@ -313,5 +313,30 @@
           #223 100%
         );
     }
+
+    #HTML {
+        background-color: rgba(140, 217, 178, 0.144);
+    }
+    #CSS {
+        background-color: rgba(140, 217, 178, 0.144);
+    }
+    #JS {
+        background-color: rgba(140, 217, 178, 0.144);
+    }
+    #PHP {
+        background-color: rgba(140, 217, 178, 0.144);
+    }
+    #PYTHON {
+        background-color: rgba(140, 217, 178, 0.144);
+    }
   
-      
+    h1, h2{
+        text-align: center;
+        position: relative;
+        color: #66cc99;
+        
+      } 
+
+      li {
+        color:  white;
+      }
