@@ -201,9 +201,21 @@ a {
 ul {
     margin-bottom: 0.18rem;
     border: double 1rem black;
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.3);
 }
 
 h1, h2{
     text-align: center;
+    position: relative;
+    background-color:  rgb(128, 128, 128,0.8);
+    
+}
+
+#tglBG, #dORn {
+    border: 0.4rem double black;
+}
+
+li {
+    
+    color: black;
 }

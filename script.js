@@ -14,9 +14,13 @@ const descJS = document.getElementById("descJS")
 const PHP = document.getElementById("PHP")
 const descPHP = document.getElementById("descPHP")
 const PYTHON = document.getElementById("PYTHON")
-const descPYTHON = document.getElementById("PYTHON")
+const descPYTHON = document.getElementById("descPYTHON")
 const container = document.getElementById("container")
 const gameTEXT = document.getElementById("gameTEXT")
+const bg = document.getElementById("bg")
+const tglBG = document.getElementById("tglBG")
+const s = document.getElementById("s")
+const dORn = document.getElementById("dORn")
 
 
 const endgame = () => {
@@ -139,3 +143,34 @@ PYTHON.addEventListener("click", () => {
         descPYTHON.style.display = "none"
     }
 })
+
+tglBG.addEventListener("click", () => {
+    if (bg.style.display == 'none' ) {
+        bg.style.display = 'block'
+        dORn.style.display = 'inline'
+    }
+    else {
+        bg.style.display = 'none'
+        dORn.style.display = 'none'
+
+}
+
+    
+
+})
+
+let tgl = 0;
+dORn.addEventListener("click", () => {
+    
+        if (tgl == 1) {
+            s.setAttribute("href",'s2.css') 
+            tgl = 0;
+        } else if (tgl == 0 ) {
+            s.setAttribute("href",'s1.css') 
+            tgl = 1;
+        }
+  
+    
+
+})
+
