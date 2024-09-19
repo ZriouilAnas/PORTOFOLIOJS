@@ -331,7 +331,7 @@
         
       } 
 
-      li {
+      td {
         color:  white;
       }
 
@@ -339,4 +339,8 @@
         box-shadow: rgba(145, 145, 161, 0.8) 0 0 90px 33px;
        background-color: #ccc;
 
+      }
+
+      th {
+        background-color: rgba(140, 217, 178, 0.144);
       }

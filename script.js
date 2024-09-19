@@ -23,6 +23,7 @@ const s = document.getElementById("s")
 const dORn = document.getElementById("dORn")
 
 
+
 const endgame = () => {
 if (skills.innerText == "SKILLS" && infos.innerText == "CONTACTS" ) {
     container.style.display = "none"
@@ -145,6 +146,9 @@ PYTHON.addEventListener("click", () => {
     }
 })
 
+
+
+
 tglBG.addEventListener("click", () => {
     if (bg.style.display == 'none' ) {
         bg.style.display = 'block'
@@ -155,12 +159,11 @@ tglBG.addEventListener("click", () => {
         bg.style.display = 'none'
         dORn.style.display = 'none'
         s.setAttribute("href",'s0.css')
-
 }
-
-    
-
 })
+
+
+
 
 let tgl = 0;
 const tglFunc = () => {

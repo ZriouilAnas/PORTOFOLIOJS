@@ -10,13 +10,19 @@ body, html, #bg {
 
 @media (max-width: 600px) {
     html {
-      font-size: 14px; /* Smaller font size for small screens */
+      font-size: 10px; /* Smaller font size for small screens */
     }}
 
 #container {
     border-bottom: 1rem double black ;
-   
     
+    
+}
+
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #M-O {
@@ -60,9 +66,10 @@ button {
     position: relative;
     width: 10%;
     height: 50px;
-    margin-top: 8%;
+    margin-top: 7%;
     border:  1rem double black;
     left: 40%;
+    
 }
 
 button:hover {
@@ -72,8 +79,8 @@ button:hover {
 }
 
 #skillsList {
-    position: absolute;
-    display: block;
+    position: relative;
+    
     width: 35%;
     height: 20%;
     margin-bottom: 2%;
@@ -86,9 +93,9 @@ button:hover {
 }
 
 #infosList {
-    position: absolute;
+    position: relative;
     width: fit-content;
-    left: 55%;
+   
     display: none;
     font-size: 1.2rem;
     
@@ -202,7 +209,7 @@ a {
     color: yellow;
     padding: 0.18rem;
 }
-ul {
+tr {
     margin-bottom: 0.18rem;
     border: double 1rem black;
     background-color: rgb(255, 255, 255,0.3);
@@ -219,7 +226,13 @@ h1, h2{
     border: 0.4rem double black;
 }
 
-li {
+td {
     
-    color: black;
+    color: yellow;
+    background-color: black;
+}
+
+th {
+    background-color: rgb(47, 0, 255 , 0.5);
+    color: white;
 }
