@@ -41,14 +41,8 @@
     justify-content: space-evenly;
   }
   
-  .sky {
-    background: radial-gradient(
-        closest-corner circle at 15% 15%,
-        #ffcf33,
-        #ffcf33 20%,
-        #ffff66 21%,
-        #bbeeff 100%
-      );
+  .sky2 {
+    background-color: #223;
   }
   
   /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -333,10 +327,16 @@
     h1, h2{
         text-align: center;
         position: relative;
-        color: #66cc99;
+        color: #bbf1d6;
         
       } 
 
       li {
         color:  white;
+      }
+
+      #M-O {
+        box-shadow: rgba(145, 145, 161, 0.8) 0 0 90px 33px;
+       background-color: #ccc;
+
       }

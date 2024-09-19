@@ -26,6 +26,7 @@ const dORn = document.getElementById("dORn")
 const endgame = () => {
 if (skills.innerText == "SKILLS" && infos.innerText == "CONTACTS" ) {
     container.style.display = "none"
+    bg.firstElementChild.classList.add("sky")
     gameTEXT.innerText = "GAME IS OVER, YOU WON? LOST? THIS IS MY Brutalist Websites"
 }
 
@@ -34,16 +35,16 @@ if (skills.innerText == "SKILLS" && infos.innerText == "CONTACTS" ) {
 let position = 45;
 const moveR = () => {
     position += 5; 
-    p.style.backgroundColor = "red"
+    
    
     p.style.left = position + "%";
-    p.style.backgroundColor = "green"
+    
     collision()
     endgame()
 }
 const moveL = () => {
     position -= 5; 
-    p.style.backgroundColor = "red"
+    
     p.style.left = position + "%";
     collision()
     endgame()
@@ -177,3 +178,11 @@ const tglFunc = () => {
 }
 dORn.addEventListener("click", tglFunc)
 
+document.addEventListener("keyup" , (e) => {
+ if (e.key == "ArrowLeft") {
+    moveL()
+ }
+ else if(e.key == "ArrowRight") {
+    moveR()
+ }
+})
