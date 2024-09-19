@@ -13,9 +13,19 @@ const JS = document.getElementById("JS")
 const descJS = document.getElementById("descJS")
 const PHP = document.getElementById("PHP")
 const descPHP = document.getElementById("descPHP")
-const PYHTON = document.getElementById("PYHTON")
-const descPYHTON = document.getElementById("descPYHTON")
+const PYTHON = document.getElementById("PYTHON")
+const descPYTHON = document.getElementById("PYTHON")
+const container = document.getElementById("container")
+const gameTEXT = document.getElementById("gameTEXT")
 
+
+const endgame = () => {
+if (skills.innerText == "SKILLS" && infos.innerText == "CONTACTS" ) {
+    container.style.display = "none"
+    gameTEXT.innerText = "GAME IS OVER, YOU WON? LOST? THIS IS MY Brutalist Websites"
+}
+
+}
 
 let position = 45;
 const moveR = () => {
@@ -25,27 +35,29 @@ const moveR = () => {
     p.style.left = position + "%";
     p.style.backgroundColor = "green"
     collision()
+    endgame()
 }
 const moveL = () => {
     position -= 5; 
     p.style.backgroundColor = "red"
     p.style.left = position + "%";
     collision()
+    endgame()
 }
 
 const collision  = () => {
     if (position < 10) {
-        skills.style.backgroundColor = "pink"
+        skills.style.backgroundColor = "black"
         skills.innerText = "SKILLS";
         skillsList.style.display ="block"
     } 
     else if (position > 75) {
-        infos.style.backgroundColor = "pink"
+        infos.style.backgroundColor = "black"
         infos.innerText = "CONTACTS";
         infosList.style.display ="block"
               
     } else 
-    skills.style.backgroundColor = "yellowgreen";
+    skills.style.backgroundColor = "black";
     
 }
 
@@ -57,6 +69,11 @@ HTML.addEventListener("click", () => {
     if (descHTML.style.display === "none") {
         descHTML.style.display = "block"
         HTML.style.backgroundColor = "green"
+
+        descCSS.style.display = "none"
+        descJS.style.display = "none"
+        descPHP.style.display = "none"
+        descPYTHON.style.display = "none"
     }
     else  {
         descHTML.style.display = "none"
@@ -67,6 +84,11 @@ CSS.addEventListener("click", () => {
     CSS.style.backgroundColor = "green"
     if (descCSS.style.display == "none") {
         descCSS.style.display = "block"
+
+        descHTML.style.display = "none"
+        descJS.style.display = "none"
+        descPHP.style.display = "none"
+        descPYTHON.style.display = "none"
     }
     else {
         descCSS.style.display = "none"
@@ -77,6 +99,11 @@ JS.addEventListener("click", () => {
     JS.style.backgroundColor = "green"
     if (descJS.style.display == "none") {
         descJS.style.display = "block"
+
+        descHTML.style.display = "none"
+        descCSS.style.display = "none"
+        descPHP.style.display = "none"
+        descPYTHON.style.display = "none"
     }
     else {
         descJS.style.display = "none"
@@ -87,6 +114,11 @@ PHP.addEventListener("click", () => {
     PHP.style.backgroundColor = "green"
     if (descPHP.style.display == "none") {
         descPHP.style.display = "block"
+
+        descHTML.style.display = "none"
+        descJS.style.display = "none"
+        descCSS.style.display = "none"
+        descPYTHON.style.display = "none"
     }
     else {
         descPHP.style.display = "none"
@@ -97,6 +129,11 @@ PYTHON.addEventListener("click", () => {
     PYTHON.style.backgroundColor = "green"
     if (descPYTHON.style.display == "none") {
         descPYTHON.style.display = "block"
+
+        descHTML.style.display = "none"
+        descJS.style.display = "none"
+        descPHP.style.display = "none"
+        descCSS.style.display = "none"
     }
     else {
         descPYTHON.style.display = "none"

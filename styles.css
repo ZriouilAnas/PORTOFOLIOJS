@@ -1,11 +1,21 @@
-body, html , #container{ 
+body, html { 
     position: relative;
     margin: 0; 
     padding: 0; 
     width: 100vw; 
     height: 100vh; 
-    background-color: bisque;
+    background-color: lightgray;
+    
 } 
+
+@media (max-width: 600px) {
+    html {
+      font-size: 14px; /* Smaller font size for small screens */
+    }}
+
+#container {
+    border-bottom: 1rem double black ;
+}
 
 #M-O {
     position: absolute;
@@ -17,7 +27,8 @@ body, html , #container{
 
 #skills {
     position: absolute;
-    background-color: yellowgreen;
+    background-color: black;
+    color: white;
     width: 10%;
     height: 12%;
     text-align: center;
@@ -29,7 +40,8 @@ body, html , #container{
 
 #infos {
     position: absolute;
-    background-color: yellowgreen;
+    background-color: black;
+    color: white;
     top: 0;
     width: 10%;
     height: 100px;
@@ -41,9 +53,18 @@ body, html , #container{
 
 
 button {
+    position: relative;
     width: 10%;
     height: 50px;
     margin-top: 10%;
+    border:  1rem double black;
+    left: 40%;
+}
+
+button:hover {
+    background-color: rgb(229, 255, 0);
+    color: rgb(47, 0, 255);
+    border-color: rgb(47, 0, 255);
 }
 
 #skillsList {
@@ -53,74 +74,136 @@ button {
     height: 20%;
     margin-bottom: 2%;
     display: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: yellow;
+    background-color: black;
+    
 }
 
 #infosList {
     position: absolute;
-    width: 20%;
-    left: 70%;
+    width: fit-content;
+    left: 55%;
     display: none;
     font-size: 1.2rem;
+    
 }
 
 #HTML {
     position: relative;
     height: 20%;
-    background-color: aqua;
-    border: 1px black solid;
+    background-color: black;
+    border-top: 0.2rem white solid;
+    
+
+}
+#HTML:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-color: rgb(47, 0, 255);
 }
 
 #descHTML {
     margin-left: 3%;
     display: none;
     width: 100%;
+    background-color: black;
 
 }
 
 #CSS {
     position: relative;
     height: 20%;
-    background-color: aqua;
-    border: 1px black solid;
+    background-color: black;
+    border-top: 0.2rem white solid;
+    
+}
+
+#CSS:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-color: rgb(47, 0, 255);
 }
 
 #descCSS {
     margin-left: 3%;
     display: none;
+    background-color: black;
 }
 
 #JS {
     position: relative;
     height: 20%;
-    background-color: aqua;
-    border: 1px black solid;
+    background-color: black;
+    border-top: 0.2rem white solid;
+    
+}
+#JS:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-color: rgb(47, 0, 255);
 }
 
 #descJS {
     margin-left: 3%;
     display: none;
+    background-color: black;
+    
 }
 
 #PHP {
     position: relative;
     height: 20%;
-    background-color: aqua;
-    border: 1px black solid;
+    background-color: black;
+    border-top: 0.2rem white solid;
+    
 }
-
+#PHP:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-color: rgb(47, 0, 255);
+}
 #descPHP {
     margin-left: 3%;
     display: none;
+    background-color: black;
 }
 
 #PYTHON {
     position: relative;
     height: 20%;
-    background-color: aqua;
-    border: 1px black solid;
+    background-color: black;
+    border-top: 0.2rem white solid;
+    color: yellow;
 }
-
+#PYTHON:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-color: rgb(47, 0, 255);
+}
 #descPYTHON {
     margin-left: 3%;
     display: none;
+    background-color: black;
+}
+
+a {
+    background-color: black;
+    color: yellow;
+    padding: 0.18rem;
+}
+ul {
+    margin-bottom: 0.18rem;
+    border: double 1rem black;
+    background-color: white;
+}
+
+h1, h2{
+    text-align: center;
 }
